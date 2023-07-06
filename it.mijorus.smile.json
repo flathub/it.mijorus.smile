@@ -26,6 +26,23 @@
     "modules": [
         "python3-requirements.json",
         {
+            "name": "xdotool",
+            "no-autogen": true,
+            "make-args": [
+                "WITHOUT_RPATH_FIX=1"
+            ],
+            "make-install-args": [
+                "PREFIX=${FLATPAK_DEST}"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/jordansissel/xdotool/archive/v3.20211022.1/xdotool-3.20211022.1.tar.gz",
+                    "sha256": "82b15a944a5e82fee15e0f6116bd9f642bc3d0bb6989fc0ca5ad9dfe35de0847"
+                }
+            ]
+        },
+        {
             "name" : "smile",
             "builddir" : true,
             "buildsystem" : "meson",
@@ -33,7 +50,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/mijorus/smile",
-                    "commit": "464eee57fd13a0700c80ed073825ef4a4a3a8320"
+                    "commit": "fd99d9dbd334d01c9881e75d7fd8b3928d9f2a61"
                 }
             ]
         }
