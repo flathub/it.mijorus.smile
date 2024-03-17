@@ -43,6 +43,21 @@
             ]
         },
         {
+            "name": "wl-clipboard",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dzshcompletiondir=no",
+                "-Dfishcompletiondir=no"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/bugaevc/wl-clipboard.git",
+                    "tag": "v2.2.1"
+                }
+            ]
+        },
+        {
             "name" : "smile",
             "builddir" : true,
             "buildsystem" : "meson",
@@ -50,7 +65,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/mijorus/smile",
-                    "commit": "6d540a99d114805af152adeef97c8dca1a76244f"
+                    "commit": "93ff941dd574115f8e56365e3f83e47193569faa"
                 }
             ]
         }
