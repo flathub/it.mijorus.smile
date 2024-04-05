@@ -65,7 +65,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/mijorus/smile",
-                    "commit": "93ff941dd574115f8e56365e3f83e47193569faa"
+                    "commit": "ec769d676a1562a3c5d0da1f4423d1189a1d230b"
                 }
             ]
         }
