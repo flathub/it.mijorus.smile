@@ -9,7 +9,6 @@
         "--socket=wayland",
         "--socket=fallback-x11",
         "--device=dri",
-        "--talk-name=it.mijorus.smile",
         "--talk-name=org.gnome.Shell.Extensions"
     ],
     "cleanup": [
