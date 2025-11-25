@@ -1,7 +1,7 @@
 {
     "id": "it.mijorus.smile",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "smile",
     "finish-args": [
@@ -64,7 +64,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/mijorus/smile",
-                    "commit": "1ccdb86422f511b0b2698221953268c58ef77deb"
+                    "commit": "323b4ba389521fa66a41b88e34f08d2aab6220c5"
                 }
             ]
         }
