@@ -23,7 +23,22 @@
         "*.a"
     ],
     "modules": [
-        "python3-requirements.json",
+        {
+            "name": "dbus-python",
+            "buildsystem": "meson",
+            "sources": [
+            {
+                "type": "archive",
+                "url": "https://gitlab.freedesktop.org/dbus/dbus-python/-/archive/dbus-python-1.4.0/dbus-python-dbus-python-1.4.0.tar.gz",
+                "sha256": "da4ee9bbb9eb901d463a7cc9f99dfdbe6c751c8b48b29b78d378985a3c9656ad",
+                "x-checker-data": {
+                    "type": "anitya",
+                    "project-id": 402,
+                    "url-template": "https://gitlab.freedesktop.org/dbus/dbus-python/-/archive/dbus-python-1.4.0/dbus-python-dbus-python-$version.tar.gz"
+                }
+            }
+            ]
+        },
         {
             "name": "xdotool",
             "no-autogen": true,
@@ -36,8 +51,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/jordansissel/xdotool/archive/v3.20211022.1/xdotool-3.20211022.1.tar.gz",
-                    "sha256": "82b15a944a5e82fee15e0f6116bd9f642bc3d0bb6989fc0ca5ad9dfe35de0847"
+                    "url": "https://github.com/jordansissel/xdotool/archive/refs/tags/v4.20251130.1.tar.gz",
+                    "sha256": "a9837efca5ceb2c04f1bd276985d93960c5ea11eed9725c517ae3ebc3fc6dca7",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 8648,
+                        "url-template": "https://github.com/jordansissel/xdotool/archive/refs/tags/v$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -52,7 +72,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/bugaevc/wl-clipboard.git",
-                    "tag": "v2.2.1"
+                    "tag": "v2.2.1",
+                    "commit": "3eb912c274042cd5deed6b478b39908a12f37498",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
                 }
             ]
         },
@@ -64,7 +89,12 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/mijorus/smile",
-                    "commit": "27e0537eae634f76fdb6ab546df6a0e0b5d4357f"
+                    "commit": "c8b366a65fd0a8bc75069bdcc1fd666228d9638b",
+                    "tag": "2.11.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         }
