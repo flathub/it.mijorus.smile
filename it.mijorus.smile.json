@@ -52,7 +52,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/bugaevc/wl-clipboard.git",
-                    "tag": "v2.2.1"
+                    "commit": "67a7b937895bceec1ae5ccebb10216f63f70ca1b"
                 }
             ]
         },
@@ -64,7 +64,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/mijorus/smile",
-                    "commit": "d60549246be52808cc3e30dc578557819ba35eae"
+                    "commit": "9a70beef94f20bce89fe01f7c96f4908aa7804fd"
                 }
             ]
         }
